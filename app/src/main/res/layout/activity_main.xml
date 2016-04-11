@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:id="@+id/current_action_view" />
+
+    <Button
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:text="Start Simulation"
+        android:id="@+id/startBtn" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:id="@+id/deviceListView"
+        android:layout_weight="0.72" />
+
+    <Button
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:id="@+id/disconnectBtn" />
+</LinearLayout>
