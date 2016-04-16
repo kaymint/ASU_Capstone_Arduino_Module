@@ -8,24 +8,17 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.os.AsyncTask;
-
-import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.util.HashMap;
 import java.util.Timer;
-import java.util.TimerTask;
 import java.util.UUID;
-import android.provider.Settings.Secure;
 
 public class Simulation extends AppCompatActivity {
 

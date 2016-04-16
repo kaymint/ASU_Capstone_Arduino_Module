@@ -9,11 +9,9 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -230,7 +228,7 @@ public class CameraActivity extends AppCompatActivity {
         prgDialog.setMessage("Invoking Php");
         AsyncHttpClient client = new AsyncHttpClient();
         // Don't forget to change the IP address to your LAN address. Port no as well.
-        client.post("http://10.10.56.71:81/applied_project_upload/upload_image.php",
+        client.post("http://10.10.55.168:81/applied_project_upload/upload_image.php",
                 params, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {

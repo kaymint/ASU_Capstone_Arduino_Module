@@ -39,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
         myBluetooth = BluetoothAdapter.getDefaultAdapter();
         if(myBluetooth == null)
         {
-            //Show a mensag. that thedevice has no bluetooth adapter
-            Toast.makeText(getApplicationContext(), "Bluetooth Device Not Available", Toast.LENGTH_LONG).show();
-            //finish apk
+            //show message if bluetooth is not available
+            Toast.makeText(getApplicationContext(), "Device does not have bluetooth", Toast.LENGTH_LONG).show();
+
+            //close
             finish();
         }
         else
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             for(Object bt : pairedDevices)
             {
 
-                currentAction.setText("Showing Paired Device List");
+                currentAction.setText("List of Paired Devices");
                 list.add(((BluetoothDevice) bt).getName() + "\n" + ((BluetoothDevice) bt).getAddress()); //Get the device's name and the address
             }
         }
